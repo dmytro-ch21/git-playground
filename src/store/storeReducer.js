@@ -26,7 +26,7 @@ export function storeReducer(state, action) {
       };
     case 'DELETE_TASK':
       return state.todos.filter((todo) => todo !== action.payload.id);
-    case 'SET_TODOS':
+    case 'SET_LOGIN':
       return { ...state, todos: action.payload.todos };
     default:
       return state;
