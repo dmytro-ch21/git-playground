@@ -26,8 +26,10 @@ export function storeReducer(state, action) {
       };
     case 'DELETE_TASK':
       return state.todos.filter((todo) => todo !== action.payload.id);
-    case 'SET_TODOS':
+    case 'DELETE_SAMPLE':
       return { ...state, todos: action.payload.todos };
+    case 'SET_SAMPLE':
+      return "This change is done by Dmytro"  
     default:
       return state;
   }
