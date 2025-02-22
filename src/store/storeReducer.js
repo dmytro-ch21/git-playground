@@ -28,6 +28,8 @@ export function storeReducer(state, action) {
       return state.todos.filter((todo) => todo !== action.payload.id);
     case 'SET_LOGIN':
       return { ...state, todos: action.payload.todos };
+    case 'SET_SAMPLE':
+      return "This change is done by Dmytro"  
     default:
       return state;
   }
