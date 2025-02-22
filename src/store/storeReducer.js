@@ -26,7 +26,7 @@ export function storeReducer(state, action) {
       };
     case 'DELETE_TASK':
       return state.todos.filter((todo) => todo !== action.payload.id);
-    case 'DELETE_SAMPLE':
+    case 'SET_LOGIN':
       return { ...state, todos: action.payload.todos };
     case 'SET_SAMPLE':
       return "This change is done by Dmytro"  
